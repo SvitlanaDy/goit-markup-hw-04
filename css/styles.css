@@ -116,7 +116,6 @@ button {
     display:flex; 
     align-items: center;
     margin-left: auto;
-    
     }
    
 
@@ -140,7 +139,6 @@ color:var(--main-title-color);
 padding-top: 32px;
 padding-bottom: 32px;
 display: block;
-
 }
 
    
@@ -271,7 +269,6 @@ justify-content: center;
     background-color: var(--main-hover-color);
     border-color: transparent;
     border-radius: 4px;
-   
    padding:10px 32px;
   
 }
@@ -293,7 +290,6 @@ justify-content: center;
     display:flex;
     justify-content: center;
     min-width: 216px;
-    
     background-color:rgba(0, 0, 0, 0.15);
 
 }
