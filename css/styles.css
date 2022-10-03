@@ -15,6 +15,8 @@ body {
     --second-background-color:#F5F5F5;
     --logoweb-color:#2196F3;
     --btn-cover-color:#188CE8;
+    --hero-background-color:#C4C4C4;
+    --soc-icon-color:#AFB1B8;
     --typical-line-height: 1.14;
     --main-font: 'Roboto', sans-serif;
    
@@ -218,9 +220,10 @@ justify-content: center;
 
 /* ------------------HERO---------------------- */
 .hero{
-    display:block;
+   
     text-align: center;
-    background: var(--main-background-color);
+    background: var(--hero-background-color);
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
@@ -230,7 +233,7 @@ justify-content: center;
     url(../images/teamworking.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
    
 }
 
@@ -315,9 +318,7 @@ justify-content: center;
 .adventages-list{
     
     display:flex;
-    justify-content:center;
-   align-items: center;
-    gap:30px;
+   
 
 }
 .adventages-list:not(:last-child){
@@ -362,14 +363,14 @@ margin-top: 10px;
 }
 
 .adventages-soc-link{
-  display:block;
+ 
   min-width: 270px;
 
   display:flex;
   justify-content:center;
   align-items: center;
   border-radius:4px;
- padding: 25px 102px;
+ padding: 25px 0;
  margin-bottom: 30px;
  background-color: var(--second-background-color);
 
@@ -451,6 +452,7 @@ color: var(--Main-text-color);
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-top: 16px;
   }
 
   .team-soc-link {
@@ -502,13 +504,7 @@ color: #ffffff;
 .regular-customers-title{
 margin-bottom: 50px;
 }
-/*.regular-customers-sections{
-  display:flex;
-  justify-content:center;
-  gap:30px;
 
-  width: calc(100%-150px)/6;
-}*/
 .regular-customers-item{
     min-width: 170px;
     border:1px solid #AFB1B8;
@@ -517,13 +513,14 @@ margin-bottom: 50px;
 }
 
 .regular-soc-link{
-  display:block;
+ 
   min-width: 170px;
 
   display:flex;
   justify-content:center;
   align-items: center;
- padding: 32px 16px;
+ padding: 16px 0;
+ color:var(--soc-icon-color);
  
  
 }
@@ -593,20 +590,23 @@ color: var(--main-title-color);
 background-color:var(--second-background-color);
 border-color: transparent;
 border-radius: 4px;
-
+cursor: pointer;
 padding:6px 22px;
+
+;
 }
 
 .about-button-examples:hover,
 .about-button-examples:focus{
 color: var(--main-white-color);
 background-color:var(--btn-cover-color);
-cursor: pointer;
+box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+ 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+  0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+
 }
 
-.examples{
-  border: 1px solid transparent;
-}
+
 
 .examples-list{
   display:flex;
@@ -643,40 +643,17 @@ line-height: 1.88;
 letter-spacing: 0.03em;
 color: var(--Main-text-color);
 }
-.examples{
-   box-shadow:0px 0px 0px 5px transparent;
-  }
-  .examples:hover{
-    box-shadow: 0px 0px 0px 5px var(--main-hover-color);
-  }
 
+.examples-link{
+  display: block;}
 
-.examples-items{
-  box-shadow:3px 3px 0px 0px transparent;
+  .examples-link:hover,
+  .examples-link:focus{
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+   0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  
 }
-.examples-items:active{
-
-  box-shadow: 5px 5px 0px 0px #757575;
-}
-
-
-.examples-wrapping{
-  box-shadow:3px 3px 0px 0px transparent;
-}
-.examples-wrapping:active{
-  box-shadow: 7px 7px 0px 0px #757575;
-}
-.examples-wrapping{
-  box-shadow:0px 0px 0px 5px transparent;
-}
-.examples-wrapping:hover{
-  box-shadow: 0px 0px 0px 5px var(--main-hover-color);
-}
-
-
-
-
-
 
 /* ----------------------Footer----------------- */
 .footer{
@@ -768,15 +745,15 @@ color: var(--main-footer-adress-color);
 
   }
   .footer-soc-title{
-    max-width: 116px;
+    
     color: var(--main-white-color);
-    Font-family: Roboto;
     Font-size: 16px;
-    margin-bottom: 20px;
     font-weight: 700;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.06em;
     margin-bottom:20px;
+    text-transform: uppercase;
+
   }
 
   .footer-soc-list {
@@ -787,7 +764,7 @@ color: var(--main-footer-adress-color);
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var(--Main-text-color);
+    background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
