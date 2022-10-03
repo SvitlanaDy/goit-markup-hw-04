@@ -169,8 +169,6 @@ color: var(--Main-text-color);
 display:block;
 padding-top: 32px;
 padding-bottom: 32px;
-
-
 display: flex;
 align-items: center;
 justify-content: center;
@@ -232,7 +230,6 @@ justify-content: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-   
 }
 
 .hero-title{
@@ -270,7 +267,6 @@ justify-content: center;
     border-color: transparent;
     border-radius: 4px;
    padding:10px 32px;
-  
 }
 
 
@@ -278,7 +274,6 @@ justify-content: center;
   box-shadow:3px 3px 0px 0px transparent;
 }
 .hero-btn:active{
-
   box-shadow: 5px 5px 0px 0px #757575;
 }
 
@@ -611,7 +606,7 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
 }
 
 .examples-item{
-  border:1px solid transparent;
+ 
  
 }
 
