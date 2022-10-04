@@ -603,13 +603,10 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
 .examples-list{
   display:flex;
   flex-wrap:wrap;
-   gap: 24px;
+   gap: 30px;
 }
 
-.examples{
- 
- 
-}
+
 
 .examples-text-content{
   
